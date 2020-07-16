@@ -48,7 +48,7 @@
     </section>
     <section>
 <h3>Форма обратной связи</h3>
-    <form method="POST" action="">
+    <form method="POST" action="" enctype="multipart/form-data">
         <label for="1">Как вас зовут?</label>
         <input type="text" name="Имя" id="1" value="Имя"> <br>
         
@@ -63,6 +63,22 @@
         <label for="3">
             Укажите свой номер<input type="password" name="" id="3" value="050 00 00 000"> <br>
         </label>
+
+        <label>
+            <input type="checkbox" name="" id="" value="" checked>
+        </label>
+
+        <h3>Выбер вариант</h3>
+        да<input type="radio" name="radio" value="Y" checked>
+        нет<input type="radio"  name="Radio" value="N"><br>
+
+        <select multiple size="2">
+            <option value="geyrn" selected>Первый вариант</option><br>
+            <option value="gyrn" >В торой вариант</option>
+    
+        </select> <br>
+
+        <input type="file">
 
         <input type="submit" name="Отправить" value="Отправить форму">
 
