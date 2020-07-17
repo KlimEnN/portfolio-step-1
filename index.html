@@ -48,42 +48,92 @@
     </section>
     <section>
 <h3>Форма обратной связи</h3>
-    <form method="POST" action="" enctype="multipart/form-data">
-        <label for="1">Как вас зовут?</label>
-        <input type="text" name="Имя" id="1" value="Имя"> <br>
-        
-        <label for="2">
-        Укажите свой номер<input type="tel" name="" id="2" value="050 00 00 000"> <br>
-        </label>
+<form action="https://echo.htmlacademy.ru/courses" method="post">
+    <fieldset>
+    <legend>Личные данные</legend>
+    <div class="half-width">
+      <label for="id" value="12345">ID отзыва</label>
+      <input typ="text" value="12345" disabled id="id">
+    </div>
+    <div class="half-width">
+      <label for="name">Имя путешественника</label>
+      <input type="text" value="Кекс" id="name">
+    </div>
+</fieldset>
 
-        <label for="4">
-                Напишите сообщение<textarea name="text" id="4" rows="5" cols="10">Пиши тут</textarea> <br>
-        </label>
 
-        <label for="3">
-            Укажите свой номер<input type="password" name="" id="3" value="050 00 00 000"> <br>
-        </label>
+<fieldset>
+    <legend>Отзыв о поездке</legend>
+    <div class="half-width">
+      <label for="country">Страна визита</label>
+      <input type="text" value="Норвегия" id="country">
+    </div>
+    <div class="half-width">
+      <label for="city">Город</label>
+      <select>
+        <option>Осло</option>  
+      </select>
+    </div>
+    <div class="half-width">
+    <label for="rating">Оценка поездки</label>
+    <input type="range" min="1" min="10">
 
-        <label>
-            <input type="checkbox" name="" id="" value="" checked>
-        </label>
 
-        <h3>Выбер вариант</h3>
-        да<input type="radio" name="radio" value="Y" checked>
-        нет<input type="radio"  name="Radio" value="N"><br>
-
-        <select multiple size="2">
-            <option value="geyrn" selected>Первый вариант</option><br>
-            <option value="gyrn" >В торой вариант</option>
+      <output name="sum">10</output>
+    </div>
+    <div class="half-width output-area">
+    </div>
+    <label for="review">Текст отзыва</label>
+    <textarea rows="5" cols="10" placeholder="Это было просто мяу!">
     
-        </select> <br>
+    </textarea>
+</fieldset>
 
-        <input type="file">
-
-        <input type="submit" name="Отправить" value="Отправить форму">
-
-    </form>
+<fieldset>
+    <legend>Оценка отеля</legend>
+    <div class="half-width">
+      <label for="hotel">Название отеля</label>
+      <input type="text" placeholder="Название по-английски">
+    </div>
+    <div class="half-width">
+      <label for="arrival_date">Дата въезда</label>
+      <input type="data" placeholder="В формате дд-мм-гггг">
+    </div>
+    <div class="one-third-width">
+      <label for="color">Цвет кроватки</label>
+      <input type="color">
+      
+    </div>
+    <div class="two-third-width">
+      <label for="dish_rating">Оценка обедов</label>
+       <select>
+        <option>Подушечки оближешь</option>  
+      </select>
+      
+    </div>
+    <label for="fish">Самая вкусная рыба</label>
+   <select id="food" name="food" multiple>
+         
+          <option value="meat">Норвежский лосось</option>
+          <option value="fish" selected>Зубатка</option>
+          <option value="chi">Морской окунь</option>
+          <option value="ind">Карась</option>
+          <option value="mice">Зеркальный карп</option>
+      
+        </select>
+   
+    <div class="buttons">
+      <input type="submit" value="Оценить">
+      <input type="reset" value="Сбросить">
+    </div>
+    
+</fieldset>
+  </form>
     </section>
+
+
+
+
 
     <footer class="page-footer">
         Контакты в подвале
